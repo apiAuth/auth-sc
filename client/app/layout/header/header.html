@@ -1,0 +1,38 @@
+<md-toolbar id="layout-header" class="md-whiteframe-z1">
+  <div class="md-toolbar-tools" flex layout="row">
+    <md-button hide-gt-md ng-click="vm.openSidebar()" aria-label="Open mainMenu">
+      <md-icon md-svg-icon="navigation:ic_menu_24px"></md-icon>
+    </md-button>
+    <div ncy-breadcrumb></div>
+    <span flex></span>
+    <md-button hide show-gt-md target="_blank" ng-repeat="menu in vm.menus" ng-href="{{menu.url}}">{{menu.name}}</md-button>
+    <md-menu md-offset="-8 56" md-position-mode="target-right target">
+      <md-button ng-click="$mdOpenMenu()">
+        <img ng-src="{{vm.user.avatar}}">
+        <span>{{vm.user.name}}</span>
+        <md-icon md-svg-icon="navigation:ic_expand_more_24px"></md-icon>
+      </md-button>
+      <md-menu-content width="3">
+        <md-menu-item>
+          <md-button ng-click="vm.profile($event)">
+            <md-icon md-svg-icon="action:ic_account_box_24px"></md-icon>
+            账号
+          </md-button>
+        </md-menu-item>
+        <!--md-menu-item>
+          <md-button ng-click="vm.setting($event)">
+            <md-icon md-svg-icon="action:ic_settings_24px"></md-icon>
+            设置
+          </md-button>
+        </md-menu-item-->
+        <md-menu-divider></md-menu-divider>
+        <md-menu-item>
+          <md-button ng-click="vm.logout()">
+            <md-icon md-svg-icon="action:ic_exit_to_app_24px"></md-icon>
+            注销
+          </md-button>
+        </md-menu-item>
+      </md-menu-content>
+    </md-menu>
+  </div>
+</md-toolbar>

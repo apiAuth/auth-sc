@@ -1,0 +1,6 @@
+{
+  "Config": {
+    "API_URL": "http://api.austack.com/api/",
+    "SERVER_URL": "http://api.austack.com"
+  }
+}

@@ -1,0 +1,52 @@
+#dashboard-content {
+  .gray {
+    background: #f5f5f5;
+  }
+  .green {
+    background: #b9f6ca;
+  }
+  .yellow {
+    background: #ffff8d;
+  }
+  .blue {
+    background: #84ffff;
+  }
+  .darkBlue {
+    background: #80d8ff;
+  }
+  .deepBlue {
+    background: #448aff;
+  }
+  .purple {
+    background: #b388ff;
+  }
+  .lightPurple {
+    background: #8c9eff;
+  }
+  .red {
+    background: #ff8a80;
+  }
+  .pink {
+    background: #ff80ab;
+  }
+  .widget {
+    padding: 8px;
+    color: #fff;
+    md-icon {
+      width: 50px;
+      height: 50px;
+      margin-left: 10px;
+      color: #fff;
+      opacity: 0.7 !important;
+    }
+    .md-body-2 {
+      opacity: 0.7 !important;
+      white-space: nowrap;
+    }
+  }
+  .cal-heatmap-container {
+    .graph-label {
+      font-size: 13px;
+    }
+  }
+}

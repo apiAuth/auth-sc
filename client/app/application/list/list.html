@@ -1,0 +1,27 @@
+<md-content id="application-list-content" layout="column" layout-padding flex>
+  <md-content>
+    <md-content layout="row" ng-if="!list.applications.data.length">
+      <div flex="33" flex-sm="100" flex-md="50">
+        <md-card>
+          <div geopattern="austack" class="desc" layout="row" layout-align="center center">
+            <div>应用列表为空</div>
+          </div>
+          <div layout="row">
+            <md-button ng-click="index.create()">现在创建</md-button>
+          </div>
+        </md-card>
+      </div>
+    </md-content>
+
+    <md-content layout="row" layout-wrap ng-if="list.applications.data.length">
+      <div ng-repeat="application in list.applications.data" flex="33" flex-sm="100" flex-md="50">
+        <ng-include src="'app/application/list/tile.html'"></ng-include>
+      </div>
+    </md-content>
+  </md-content>
+
+  <md-button ng-click="index.create($event)" class="md-fab md-accent md-fab-bottom-right" aria-label="Create a new application">
+    <md-icon md-svg-icon="content:ic_add_24px"></md-icon>
+  </md-button>
+
+</md-content>
