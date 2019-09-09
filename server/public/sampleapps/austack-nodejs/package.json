@@ -12,11 +12,11 @@
   "author": "Lyman Lai",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "2.x.x"
+    "mocha": "^6.2.0"
   },
   "dependencies": {
     "q": "^1.4.1",
-    "superagent": "^1.3.0",
-    "tracer": "^0.7.4"
+    "superagent": "^5.1.0",
+    "tracer": "^1.0.1"
   }
 }
