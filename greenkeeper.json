@@ -1,0 +1,12 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "server/public/sampleapps/austack-nodejs/package.json",
+        "server/public/sampleapps/ionic-client/package.json",
+        "server/public/sampleapps/nodejs-backend/package.json"
+      ]
+    }
+  }
+}
