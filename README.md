@@ -1,5 +1,7 @@
 # Austack 认证即服务
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zanjs/auth-sc.svg)](https://greenkeeper.io/)
+
 ![image](https://cloud.githubusercontent.com/assets/3538629/9595072/c6767052-5096-11e5-949d-99d9267a1703.png)
 
 什么是认证即服务？
